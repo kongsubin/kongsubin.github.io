@@ -54,6 +54,8 @@ author:
 menu:
   - title:             Study
     url:               /study/
+  - title:             Algorithm
+    url:               /algorithm/
   - title:             ISEL
     url:               /isel/
   - title:             About
@@ -85,6 +87,10 @@ paginate_path:         /:num/
 
 collections:
   featured_categories:
+    permalink:         /:name/
+    output:            true
+
+  algorithm_categories:
     permalink:         /:name/
     output:            true
 
