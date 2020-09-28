@@ -2,7 +2,17 @@
 layout: list
 title: Posts
 description: >
-  This is the `list` layout for showing blog posts, which shows just the title and groups them by year of publication.
-  Check out the `blog` layout for comparison.
+  all posts
 grouped: true
+categories: [github blog]
+
 ---
+
+<div class="tags-expo-list">
+  <h2>tag list</h2>
+  {% for tag in site.tags %}
+  <a href="/posts/tag-{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
+  {% endfor %}
+</div>
+<hr/>
+

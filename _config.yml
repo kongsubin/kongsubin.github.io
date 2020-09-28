@@ -52,10 +52,8 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Study
-    url:               /study/
-  - title:             Algorithm
-    url:               /algorithm/
+  - title:             Post
+    url:               /posts/
   - title:             ISEL
     url:               /isel/
   - title:             About
@@ -90,12 +88,8 @@ collections:
     permalink:         /:name/
     output:            true
 
-  algorithm_categories:
-    permalink:         /:name/
-    output:            true
-
   featured_tags:
-    permalink:         /tag-:name/
+    permalink:         /posts/tag-:name/
     output:            true
 
   projects:
