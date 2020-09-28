@@ -6,7 +6,7 @@ layout: list
 title: codeplus
 
 # The name of the tag, used in a post's front matter (e.g. tags: [<slug>]).
-slug: codeplus
+slug: codepluss
 
 # (Optional) Write a short (~150 characters) description of this featured tag.
 
