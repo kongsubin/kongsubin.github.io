@@ -2,7 +2,7 @@
 layout: post
 title: 자바 버젼 충돌 에러
 description: >
-  Error: LinkageError occurred while loading main class edu.handong.csee.isel.Main java.lang.UnsupportedClassVersionError: edu/handong/csee/isel/Main has been compiled by a more recent version of the Java Runtime (class file version 59.0), this version of the Java Runtime only recognizes class file versions up to 58.0
+  자바 class 파일 버전 충돌 
 sitemap: false
 categories: [study]
 tags: [error]

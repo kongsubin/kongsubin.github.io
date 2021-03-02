@@ -3,7 +3,7 @@ layout: post
 title: 환경변수 설정 하기 (MAC os)
 sitemap: false
 categories: [study]
-tags: [error]
+tags: [info]
 ---
 
 # 환경변수 설정 하기 

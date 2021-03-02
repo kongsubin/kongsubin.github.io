@@ -31,9 +31,9 @@ build-error: 0 (30 days)
 
 # gradle 버전 추가 하기
 
-https://gradle.org/releases/
-
 ### 1. 여기서 원하는 버전 다운 받는다. 
+
+https://gradle.org/releases/
 
 ### 2. 다운 받은 파일을 원하는 곳에 위치 시킨다.
 
