@@ -8,7 +8,7 @@ categories: [study]
 tags: [gradle]
 ---
 
-# 설치된적이 있는 그래들 리스트 보기 
+## 설치된적이 있는 그래들 리스트 보기 
 
 ~~~
 ➜  ~ brew info gradle
@@ -29,7 +29,7 @@ build-error: 0 (30 days)
 ~~~
 
 
-# gradle 버전 추가 하기
+## gradle 버전 추가 하기
 
 ### 1. 여기서 원하는 버전 다운 받는다. 
 
