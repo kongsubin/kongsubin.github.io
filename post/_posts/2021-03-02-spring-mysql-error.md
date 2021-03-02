@@ -5,7 +5,7 @@ description: >
   Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
 sitemap: false
 categories: [study]
-tags: [error]
+tags: [error][spring]
 ---
 
 # spring과 mysql 연결시 스프링 빈이 없다는 에러 
