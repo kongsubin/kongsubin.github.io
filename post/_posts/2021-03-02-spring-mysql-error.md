@@ -13,7 +13,9 @@ tags: [error][spring]
 ## 1. 첫번째 확인
 application.properties확인
 > username과 password가 잘 매칭되어 있는지 확인한다. 
+
 > Timezone이 잘 설정되어 있는지 확인한다. Timezone을 꼭 설정해줘야만 에러가 나지 않는다. "serverTimezone=Asia/Seoul"
+
 ~~~java
 spring.jpa.hibernate.ddl-auto=none
 spring.mvc.view.prefix=/WEB-INF/views/
@@ -31,17 +33,17 @@ spring.jpa.show-sql=true
 
 ## 2. 두번째 확인 
 #### 인텔리제이에 들어가서 우측 상단에 있는 database로 들어간다. 
-![Full-width image](/assets/img/spring/mysql1.png/400){:.lead data-width="400"}
+![](/assets/img/spring/mysql1.png){:.lead data-width="400"}
 
 
 #### +버튼에서 data source를 클릭 한 후, mysql를 누른다. 
-![Full-width image](/assets/img/spring/mysql2.png/400){:.lead data-width="400"}
+![](/assets/img/spring/mysql2.png){:.lead data-width="400"}
 
 #### 아래의 창이 뜨는데, 아래의 창에서, timezone, user, password를 모두 설정한 뒤, Test Connection을 누른다. 
-![Full-width image](/assets/img/spring/mysql3.png/400){:.lead data-width="400"}
+![](/assets/img/spring/mysql3.png){:.lead data-width="400"}
 
 #### 다음과 같이 Test Connection이 성공했다면 apply and ok를 누른다. 
-![Full-width image](/assets/img/spring/mysql4.png/400){:.lead data-width="400"}
+![](/assets/img/spring/mysql4.png){:.lead data-width="400"}
 
 
 
