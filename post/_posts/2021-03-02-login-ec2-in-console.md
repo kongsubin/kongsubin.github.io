@@ -7,6 +7,10 @@ tags: [aws]
 ---
 # EC2서버에 Console로 로그인 하기 
 
+
+<br>
+<br>
+
 # 로그인하기
 ~~~bash
 ssh - i "key pem이 있는 파일 경로" ec2-user@public_ip_address 
@@ -18,6 +22,10 @@ ssh - i "key pem이 있는 파일 경로" ec2-user@public_ip_address
 
 이제 ec2서버에 Httpd를 설치해보겠다.
 
+
+<br>
+<br>
+
 # Httpd
 : 서버에서 웹 페이지 전송 서비스를 제공해주는 서버 프로그램
 1. yum update를 실행한다.
@@ -25,6 +33,9 @@ ssh - i "key pem이 있는 파일 경로" ec2-user@public_ip_address
 sudo yum update
 ~~~
 ![](https://images.velog.io/images/kongsub/post/3af44b3d-9456-4aeb-8ae6-1aaaee8204f4/image.png)
+
+
+<br>
 
 2. httpd를 설치한다.
 ~~~bash
@@ -37,6 +48,8 @@ cd /var/www/
 ~~~
 ![](https://images.velog.io/images/kongsub/post/9ed04e2b-8c4c-4e7d-a3fa-5a8fb3905cd1/image.png)
 
+<br>
+
 3. /var/www 디렉토리 권한 설정해준다. 
 ~~~bash
 sudo groupadd www
@@ -48,6 +61,8 @@ groups
 ~~~
 위의 명령어를 실행하면 www디렉토리가 포함된걸 확인 할 수 있다. 
 ![](https://images.velog.io/images/kongsub/post/fb73f4b0-23c8-4f48-ad7a-9768502149f3/image.png)
+
+<br>
 
 4. 권한 주기
 ~~~bash
@@ -63,16 +78,24 @@ find /var/www -type f -exec sudo chmod 0664 {} \;
 ~~~
 ![](https://images.velog.io/images/kongsub/post/2bef50f3-ac1f-45eb-a435-df602ac5b700/image.png)
 
+<br>
 
-4. httpd 서비스 실행시키기. 
+
+5. httpd 서비스 실행시키기. 
 ~~~bash
 sudo service httpd start
 ~~~
 ![](https://images.velog.io/images/kongsub/post/bdc531c4-0dab-4bfd-9985-831ab0595758/image.png)
 
+<br>
+<br>
+
 # 보안 및 그룹 편집하기.
 인바운드 규칙에 HTTP를 추가해준다. 
 ![](https://images.velog.io/images/kongsub/post/5c120ea8-eea4-409b-a60f-4de3ed121212/image.png)
+
+<br>
+<br>
 
 # index.html
 ![](https://images.velog.io/images/kongsub/post/397d6a2d-1e12-42dc-848e-30c6614e1c99/image.png)

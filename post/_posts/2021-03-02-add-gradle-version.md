@@ -11,40 +11,42 @@ tags: [gradle]
 
 
 
-### 1. 여기서 원하는 버전 다운 받는다. 
+## 1. 여기서 원하는 버전 다운 받는다. 
 
 https://gradle.org/releases/
 
-### 2. 다운 받은 파일을 원하는 곳에 위치 시킨다.
+## 2. 다운 받은 파일을 원하는 곳에 위치 시킨다.
 
-    ~~~
+~~~
     mv 6.6 /usr/local/Cellar/gradle/6.6
-    ~~~
+~~~
 
-### 3. 아래의 경로로 들어가서 path 변경시켜준다. 
+## 3. 아래의 경로로 들어가서 path 변경시켜준다. 
 
-    ```
+```
     cd /usr/local/bin/
-    ```
-    ~~~
+```
+~~~
     vi gradle
-    ~~~
+~~~
 
-### 4. 원하는 버전의 gradle의 실행파일이 있는 위치를 경로로 추가한다.
+## 4. 원하는 버전의 gradle의 실행파일이 있는 위치를 경로로 추가한다.
 
-    ~~~
+~~~
     JAVA_HOME="${JAVA_HOME:-/usr/local/opt/openjdk/libexec/openjdk.jdk/Contents/Home}" exec "/usr/local/Cellar/gradle/6.6/bin/gradle"  "$@" 
-    ~~~
+~~~
 
-### 5. 마지막으로 버전을 확인해본다. 
+## 5. 마지막으로 버전을 확인해본다. 
 
-    ~~~
+~~~
     gradle --version
-    ~~~
+~~~
 
+<br>
+<br><br>
+<br>
 
-
-## 설치된적이 있는 그래들 리스트 보기 
+# 설치된적이 있는 그래들 리스트 보기 
 
 ~~~
 ➜  ~ brew info gradle
@@ -65,3 +67,8 @@ build-error: 0 (30 days)
 ~~~
 
 
+<br>
+<br><br>
+<br><br>
+<br><br>
+<br>

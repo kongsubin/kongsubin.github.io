@@ -7,7 +7,10 @@ tags: [flask]
 ---
 # Python Server 구동시키기 + npm 모니터링
 
-### Python Server
+<br>
+<br>
+
+## Python Server
 Python Server의 구조는 다음과 같이 구성되어 있다. 
 
 ~~~bash
@@ -21,6 +24,8 @@ tree
 └── test.py
 ~~~
 
+<br>
+<br>
 
 ~~~bash
 vi test.py
@@ -84,6 +89,8 @@ app.run(host='0.0.0.0', port= 3306)
 ~~~
 여기서 3306포트는 mysql 포트번호이다. 
 
+<br>
+<br>
 
 ## 파이썬 서버 계속 실행시켜놓기
 
@@ -135,7 +142,11 @@ pm2 stop test
 pm2 delete
 ~~~
 
-
+<br>
+<br><br>
+<br><br>
+<br><br>
+<br>
 
 
 

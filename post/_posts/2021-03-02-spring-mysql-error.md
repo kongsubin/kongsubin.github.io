@@ -10,6 +10,8 @@ tags: [spring]
 
 # spring과 mysql 연결시 스프링 빈이 없다는 에러 
 
+<br>
+
 ## 1. 첫번째 확인
 application.properties확인
 > username과 password가 잘 매칭되어 있는지 확인한다. 
@@ -30,6 +32,9 @@ spring.datasource.password=1234
 spring.jpa.show-sql=true
 ~~~
 
+<br>
+<br>
+<br>
 
 ## 2. 두번째 확인 
 #### 인텔리제이에 들어가서 우측 상단에 있는 database로 들어간다. 
@@ -46,6 +51,12 @@ spring.jpa.show-sql=true
 ![](/assets/img/spring/mysql4.png){:.lead data-width="400"}
 
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 참고
