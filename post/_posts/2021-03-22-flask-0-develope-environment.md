@@ -1,15 +1,13 @@
 ---
 layout: post
 title: 플라스크 개발환경 
-description: >
-  flask 개발 환경 구축하기!
 sitemap: false
 categories: [study]
 tags: [flask]
 ---
-## Conda
+## Conda를 사용하여 플라스크 개발환경 구축
 
-### 1. 가상 환경 만들기 
+## 1. 가상 환경 만들기 
 
 conda를 사용하여 가상환경을 만들어 볼 것이다. 
 
@@ -25,7 +23,7 @@ conda create --name myproject python==3.8
 
 
 
-### 2. 가상환경 리스트 조회
+## 2. 가상환경 리스트 조회
 
 ~~~bash
 conda info --envs
@@ -33,7 +31,7 @@ conda info --envs
 ![](/assets/img/flask/flask-vm/2.png){:.lead data-width="100"}
 
 
-### 3. 가상환경 활성화 (activate)
+## 3. 가상환경 활성화 (activate)
 
 명령어 : source activate [가상환경 이름]
 
@@ -43,7 +41,7 @@ source activate myproject
 ![](/assets/img/flask/flask-vm/3.png){:.lead data-width="100"}
 
 
-### 4. 가상환경 비활성화 
+## 4. 가상환경 비활성화 
 
 ~~~bash
 source deactivate
@@ -54,7 +52,7 @@ conda deactivate
 
 
 
-### 5. 가상환경 삭제하기 (설치된 패키지까지 모두 삭제)
+## 5. 가상환경 삭제하기 (설치된 패키지까지 모두 삭제)
 
 명령어 : conda remove --name [가상환경 이름] --all
 
@@ -63,7 +61,7 @@ conda remove --name myproject -all
 ~~~
 
 
-### 6. 가상환경에 flask 설치 
+## 6. 가상환경에 flask 설치 
 
 ~~~bash
 conda install flask 
@@ -71,7 +69,7 @@ conda install flask
 
 
 
-### 7. 설치 확인
+## 7. 설치 확인
 
 ~~~bash
 project flask --version
