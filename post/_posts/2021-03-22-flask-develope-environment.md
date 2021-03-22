@@ -7,6 +7,7 @@ sitemap: false
 categories: [study]
 tags: [flask]
 ---
+## Conda
 
 ### 1. 가상 환경 만들기 
 
@@ -97,8 +98,8 @@ Werkzeug 1.0.1
 
 
 참고 
-https://joytk.tistory.com/14
-https://dailyheumsi.tistory.com/33
+> https://joytk.tistory.com/14
+> https://dailyheumsi.tistory.com/33
 
 
 

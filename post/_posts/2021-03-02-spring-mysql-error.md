@@ -48,5 +48,5 @@ spring.jpa.show-sql=true
 
 
 
-참고한 블로그 
+참고
 https://victorydntmd.tistory.com/321
