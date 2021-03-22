@@ -54,8 +54,8 @@ author:
 menu:
   - title:             Post
     url:               /posts/
-  - title:             ISEL
-    url:               /isel/
+  # - title:             ISEL
+  #   url:               /isel/
   - title:             About
     url:               /about/
 
