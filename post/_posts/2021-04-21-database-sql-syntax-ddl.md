@@ -2,8 +2,8 @@
 layout: post
 title: Data Definition Language
 sitemap: false
-description: > 
-DDL이 무엇인지에, 그리고 문법들은 무엇이 있는지에 대해 살펴본다 
+# description: > 
+# DDL이 무엇인지에, 그리고 문법들은 무엇이 있는지에 대해 살펴본다 
 categories: [study]
 tags: [database]
 ---

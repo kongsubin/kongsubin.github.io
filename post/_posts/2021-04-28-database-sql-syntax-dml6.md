@@ -20,12 +20,10 @@ tags: [database]
     INSERT INTO course
     VALUES ('CS-437', 'Database Systems', 'Comp. Sci.', 4);
     
-    --------------------------------------------------------------------------
     
     INSERT INTO course (course_id, title, dept_name, credits)
     VALUES ('CS-437', 'Database Systems', 'Comp. Sci.', 4);
     
-    --------------------------------------------------------------------------
     
     INSERT INTO student
     VALUES ('3003', 'Green', 'Finance', null);
@@ -106,15 +104,13 @@ tags: [database]
     "Delete all instructors"
     DELETE FROM instructor;
     # instructor안에 있는 TUPLE을 모두 다 지움
-    
-    --------------------------------------------------------------------------
+
     
     "Delete all instructors from the Finance department"
     DELETE FROM instructor
     WHERE dept_name = 'Finance';
     # WHERE 절 조건을 만족하는 Tuple을 다 지움
-    
-    --------------------------------------------------------------------------
+
     
     "Delete all tuples in the instructor relation for those instructors
     associated with a department located in the Watson building"
@@ -123,8 +119,6 @@ tags: [database]
     									FROM department
     										WHERE building = 'Watson');
     # building 이름이 Watson인 학부에 속한 모든 instructor를 지우기 
-    
-    --------------------------------------------------------------------------
     
     # "Delete all instructors whose salary is less than the average salary of instructors"
     DELETE FROM instructor

@@ -2,8 +2,8 @@
 layout: post
 title: DML의 문법 - Set, String, Order operations
 sitemap: false
-description: > 
-NULL values, Set operations, String operations, ordering
+# description: > 
+# NULL values, Set operations, String operations, ordering
 categories: [study]
 tags: [database]
 ---

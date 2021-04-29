@@ -2,8 +2,8 @@
 layout: post
 title: DML의 문법 - Set membership (SOME, ALL, EXISTS)
 sitemap: false
-description: > 
-Set membership (SOME, ALL, EXISTS)의 활용 및 예제 
+# description: > 
+# Set membership (SOME, ALL, EXISTS)의 활용 및 예제 
 categories: [study]
 tags: [database]
 ---

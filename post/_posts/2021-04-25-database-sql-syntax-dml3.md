@@ -2,8 +2,8 @@
 layout: post
 title: DML의 문법 - Aggregate functions
 sitemap: false
-description: > 
-Aggregate functions - AVG, MIN, MAX, SUM, COUNT, GROUP BY, HAVING
+# description: > 
+# Aggregate functions - AVG, MIN, MAX, SUM, COUNT, GROUP BY, HAVING
 categories: [study]
 tags: [database]
 ---
