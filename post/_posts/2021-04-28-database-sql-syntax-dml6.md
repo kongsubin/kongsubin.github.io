@@ -2,8 +2,8 @@
 layout: post
 title: DML의 문법 - Modification of database(INSERT, UPDATE, DELETE)
 sitemap: false
-description: > 
-Modification of database(INSERT, UPDATE, DELETE)의 활용 및 예제 
+# description: > 
+#  Modification of database(INSERT, UPDATE, DELETE)의 활용 및 예제 
 categories: [study]
 tags: [database]
 ---
