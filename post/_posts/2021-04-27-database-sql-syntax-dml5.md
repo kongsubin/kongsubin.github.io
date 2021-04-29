@@ -20,10 +20,11 @@ tags: [database]
     FROM teaches
     WHERE semester = 'Fall' AND year= 2017 AND
     			course_id IN (SELECT course_id
-    										FROM teaches
-    										WHERE semester = 'Spring' AND year= 2018);
+    						  FROM teaches
+    						  WHERE semester = 'Spring' AND year= 2018);
     										
-    # 가을학기이고, 2017년도에 가르친 수업 중, 봄학기이고 2018년도에도 가르친 수업 즉, course_id를 서브 쿼리에 들어있는 것들만 가져온다. 
+    # 가을학기이고, 2017년도에 가르친 수업 중, 봄학기이고 2018년도에도 가르친 수업 즉, 
+    # course_id를 서브 쿼리에 들어있는 것들만 가져온다. 
     ~~~
 
     ~~~mysql
@@ -31,10 +32,9 @@ tags: [database]
     
     SELECT COUNT(DISTINCT ID)
     FROM takes
-    WHERE (course_id, sec_id, semester, year) IN
-    															(	SELECT course_id, sec_id, semester, year
-    																FROM teaches
-    																WHERE teaches.ID= 10101);
+    WHERE (course_id, sec_id, semester, year) IN(SELECT course_id, sec_id, semester, year
+    											 FROM teaches
+    										     WHERE teaches.ID= 10101);
     
     : ID가 10101인 instructor가 가르치는 course를 듣는 학생들의 수를 유니크하게 세어라.  
     ~~~
@@ -65,9 +65,9 @@ tags: [database]
     # 같은 쿼리 
     SELECT name
     FROM instructor
-    WHERE salary > SOME (	SELECT salary
-    											FROM instructor
-    											WHERE dept_name = 'Biology');
+    WHERE salary > SOME (SELECT salary
+    					 FROM instructor
+    					 WHERE dept_name = 'Biology');
     
     # Biology학부 소속인 instructor의 salary들 중 하나라도 낮다면 true
     ~~~
@@ -84,8 +84,8 @@ tags: [database]
     SELECT name
     FROM instructor
     WHERE salary > ALL (SELECT salary
-    										FROM instructor
-    										WHERE dept name = 'Biology');
+    					FROM instructor
+    					WHERE dept name = 'Biology');
     
     # Biology학부 소속인 instructor의 salary들 모두보다 크면 trues
     ~~~
@@ -101,10 +101,10 @@ tags: [database]
     SELECT course_id
     FROM section AS S
     WHERE semester = 'Fall' AND year = 2017 AND
-    									EXISTS (SELECT *
-    													FROM section AS T
-    													WHERE semester = 'Spring' AND year= 2018
-    																AND S.course_id = T.course_id);
+    							EXISTS (SELECT *
+    									FROM section AS T
+    									WHERE semester = 'Spring' AND year= 2018
+    										AND S.course_id = T.course_id);
     
     # “Find all courses taught in both the Fall 2017 semester and in the Spring 2018 semester”
     # => 2017년도 가을학기에도 제공되었고, 2018년도 봄학기에도 제공된 수업들의 목록 
@@ -119,12 +119,11 @@ tags: [database]
     SELECT DISTINCT S.ID, S.name
     FROM student AS S
     WHERE NOT EXISTS (SELECT course_id
-    									FROM course
-    									WHERE dept_name = 'Music'
-    												AND course_id NOT IN
-    																			(	SELECT T.course_id
-    																				FROM takes AS T
-    																				WHERE S.ID = T.ID));
+    				  FROM course
+    				  WHERE dept_name = 'Music'
+    					AND course_id NOT IN(SELECT T.course_id
+    										FROM takes AS T
+    										WHERE S.ID = T.ID));
     
     
     # => 학생을 찾는데, Music학부에서 제공되는 모든 수업을 들은 학생들. 
@@ -147,9 +146,9 @@ tags: [database]
     ~~~mysql
     SELECT T.course_id
     FROM course AS T
-    WHERE UNIQUE ( 	SELECT R.course_id
-    								FROM section AS R
-    								WHERE T.course_id= R.course_id AND R.year = 2017);
+    WHERE UNIQUE ( SELECT R.course_id
+    				FROM section AS R
+    				WHERE T.course_id= R.course_id AND R.year = 2017);
     
     # 서브 쿼리에 duplication이 있다면 false, 없으면 true
     ~~~

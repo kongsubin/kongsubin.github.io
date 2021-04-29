@@ -33,7 +33,8 @@ tags: [database]
     ~~~
 
     ~~~mysql
-    # "Make each student in the Music department who has earned more than 144 credit hours an instructor in the Music department with a salary of $18,000"
+    # "Make each student in the Music department who has earned more than 144 credit hours 
+    # an instructor in the Music department with a salary of $18,000"
     
     INSERT INTO instructor
     		SELECT ID, name, dept_name, 18000
@@ -81,7 +82,8 @@ tags: [database]
     - ##### CASE Statement for Conditional Update 
 
       ~~~mysql
-      # "Increase salaries of instructors whose salary is over $100,000 by 3%, and all others by a 5%"
+      # "Increase salaries of instructors whose salary is over $100,000 by 3%, 
+      # and all others by a 5%"
       UPDATE instructor
       SET salary = CASE
       								WHEN salary <= 100000 THEN salary * 1.05
@@ -97,9 +99,6 @@ tags: [database]
       						END
       ~~~
 
-    ~~~
-      
-    ~~~
 
   - ## DELETE 
 

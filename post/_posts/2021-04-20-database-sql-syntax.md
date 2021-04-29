@@ -23,7 +23,8 @@ tags: [database]
 ### 1. DDL - Data Definition Language
 
 > DB를 정의하고, DB에 table을 만들고, 삭제할 때 사용하는 언어이다. 
-> : How to represent relations and information in a database for declaring database schemas
+
+> How to represent relations and information in a database for declaring database schemas
 
  - CREATE
  - ALTER
@@ -32,7 +33,8 @@ tags: [database]
 ### 2. DML - Data Manipulation Language
 
 > DB에서 Data를 가져오거나, 변경, 삭제, 추가할 때 사용한다. 
-> : How to store and retrieve information from a database
+
+> How to store and retrieve information from a database
 
  - SELECT, FROM, WHERE
  - NULL values

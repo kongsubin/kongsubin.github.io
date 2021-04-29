@@ -41,14 +41,13 @@ tags: [database]
     ~~~mysql
     "List all departments along with the number of instructors in each department"
     SELECT dept_name, (	SELECT COUNT(*)
-    										FROM instructor
-    										WHERE department.dept_name = instructor.dept_name) AS num_instructors
+    					FROM instructor
+    					WHERE department.dept_name = instructor.dept_name) AS num_instructors
     FROM department;
     
     # 학부에 소속된 교수님들의 수를 보여주는 쿼리이다. 
     ~~~
 
-    ![image-20210422233813120](/Users/yunsubin/Library/Application Support/typora-user-images/image-20210422233813120.png)
 
   - #### WITH - MYSQL에서 지원하지 않는 문법이다. 
 

@@ -56,10 +56,9 @@ tags: [database]
     SELECT LT.course_id
     FROM (SELECT course_id FROM section WHERE semester = 'Fall' AND year = 2017)
     			AS LT
-    			JOIN (SELECT course_id FROM section WHERE semester = 'Spring' AND year =
-    						2018) AS RT
+    			JOIN (SELECT course_id FROM section WHERE semester = 'Spring' AND year = 2018) 
+                AS RT
     			ON LT.course_id=RT.course_id;
-    			
     ~~~
 
   - ##### EXCEPT - 차집합 - MySQL에서 지원하지 않음. 
