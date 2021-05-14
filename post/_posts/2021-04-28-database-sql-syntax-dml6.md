@@ -121,6 +121,6 @@ tags: [database]
     --"Delete all instructors whose salary is less than the average salary of instructors"
     DELETE FROM instructor
     WHERE salary < (SELECT AVG (salary)
-    								FROM instructor);
+      FROM instructor);
     ~~~
 

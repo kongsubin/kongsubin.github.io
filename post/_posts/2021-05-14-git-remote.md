@@ -22,6 +22,8 @@ $ git remote -v
 $ git remote add <단축이름> <url> 
 ~~~
 
+<br>
+<br>
 
 
 ## 리모트 저장소를 Pull 하거나 Fetch 하기
@@ -69,7 +71,8 @@ $ git push origin master
 
 
 
-
+<br>
+<br>
 
 
 ## 리모트 저장소 이름을 바꾸거나 리모트 저장소를 삭제하기
