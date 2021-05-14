@@ -16,8 +16,8 @@ tags: [database]
 
   - ##### IS NULL : NULL인것만
 
-    ~~~mysql
-    # "Find all instructors whose salary is null"
+    ~~~sql
+    --"Find all instructors whose salary is null"
     
     SELECT name
     FROM instructor
@@ -26,7 +26,7 @@ tags: [database]
 
   - ##### IS NOT NULL : NULL이 아닌 것만
 
-    ~~~mysql
+    ~~~sql
     SELECT name
     FROM instructor
     WHERE salary IS NOT NULL;
@@ -40,8 +40,8 @@ tags: [database]
 
   - ##### UNION - 합집합 
 
-    ~~~mysql
-    # "Find courses that ran in Fall 2017 or in Spring 2018"
+    ~~~sql
+    --"Find courses that ran in Fall 2017 or in Spring 2018"
     
     (SELECT course_id FROM section WHERE semester = 'Fall' AND year = 2017)
     UNION
@@ -50,8 +50,8 @@ tags: [database]
 
   - ##### INTERSECT - 교집합 - MySQL에서 지원하지 않음. 
 
-    ~~~mysql
-    # "Find courses that ran in Fall 2017 and in Spring 2018"
+    ~~~sql
+    --"Find courses that ran in Fall 2017 and in Spring 2018"
     
     SELECT LT.course_id
     FROM (SELECT course_id FROM section WHERE semester = 'Fall' AND year = 2017)
@@ -63,8 +63,8 @@ tags: [database]
 
   - ##### EXCEPT - 차집합 - MySQL에서 지원하지 않음. 
 
-    ~~~mysql
-    # "Find courses that ran in Fall 2017 but not in Spring 2018"
+    ~~~sql
+    --"Find courses that ran in Fall 2017 but not in Spring 2018"
     
     SELECT course_id FROM section WHERE semester = 'Fall' AND year = 2017
     AND course_id NOT IN
@@ -80,29 +80,29 @@ tags: [database]
 
   - ##### (%) : any substring
 
-    ~~~mysql
-    # "Find the names of all instructors whose name includes the substring “ri”"
+    ~~~sql
+    --"Find the names of all instructors whose name includes the substring “ri”"
     
     SELECT name
     FROM instructor
     WHERE name LIKE '%ri%';
-    # 이름에 ri가 들어 있는 name가져오기 
+    --이름에 ri가 들어 있는 name가져오기 
     ~~~
 
   - ##### (_) : any character
 
   - ##### (\\) : 이건 문자에요 라고 알려주는 것
 
-    ~~~mysql
+    ~~~sql
     LIKE '100 \%' ESCAPE '\'
     
     LIKE '100 \%'
-    # 100%가 있는 것들 
+    --100%가 있는 것들 
     ~~~
 
   - ##### 예제 모음 
 
-    ~~~
+    ~~~sql
     'Intro%' : intro로 시작하는 모든 애들 
     '%Comp%' : Comp가 들어있는 모든 애들
     '_ _ _' : 3글자인 애들
@@ -115,7 +115,7 @@ tags: [database]
     upper, lower 함수를 사용한다. 
     ~~~
 
-    ~~~mysql
+    ~~~sql
     SELECT dept_name 
     FROM department 
     WHERE LOWER(dept_name) like '%sci%';
@@ -127,8 +127,8 @@ tags: [database]
 
   - ##### ORDER BY 
 
-    ~~~mysql
-    "List in alphabetic order the names of all instructors"
+    ~~~sql
+    --"List in alphabetic order the names of all instructors"
     
     SELECT DISTINCT name
     FROM instructor
@@ -137,7 +137,7 @@ tags: [database]
 
   - ##### DESC - 역순 
 
-    ~~~mysql
+    ~~~sql
     ORDER BY name DESC
     ~~~
 
