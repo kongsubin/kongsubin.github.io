@@ -8,7 +8,7 @@ tags: [git]
 
 # 리모트 저장소
 
-리모트 저장소란 인터넷이나 네트워크 어딘가에 존재하는 저장소를 말한다. EX) Github 
+> 리모트 저장소란 인터넷이나 네트워크 어딘가에 존재하는 저장소를 말한다. EX) Github 
 
 ## 현재 프로젝트에 등록된 리모트 저장소를 확인
 
@@ -81,9 +81,7 @@ $ git push origin master
 
 ~~~bash
 $ git remote rename pb paul
-$ git remote
-origin
-paul
+$ git remote origin paul
 ~~~
 
 : pb ==> paul
@@ -92,8 +90,7 @@ paul
 
 ~~~
 $ git remote remove paul
-$ git remote
-origin
+$ git remote origin
 ~~~
 
 

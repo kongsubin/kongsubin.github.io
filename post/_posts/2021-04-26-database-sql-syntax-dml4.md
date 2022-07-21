@@ -10,9 +10,9 @@ tags: [database]
 
 # Nested Subqueries
 
-  : 쿼리가 다른 쿼리의 sub로 포함되는 것을 말한다.
+> 쿼리가 다른 쿼리의 sub로 포함되는 것을 말한다.
 
-  : sub 쿼리는 이름을 붙여줘야한다. (AS를 사용)
+> sub 쿼리는 이름을 붙여줘야한다. (AS를 사용)
 
   - ####  FROM 뒤에
 
@@ -30,7 +30,7 @@ tags: [database]
 
   - #### WHERE 뒤에
 
-    : B <operation> (subquery) 
+    : B operation (subquery) 
 
   - #### SELETE 뒤에 
 

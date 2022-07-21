@@ -52,7 +52,7 @@ tags: [database]
 
   - #### SOME
 
-    : at least one이라도 있으면 true
+    : at least one 이라도 있으면 true
 
     : SOME = IN과 비슷함, attr끼리 OR로 비교연산하는 느낌
 
