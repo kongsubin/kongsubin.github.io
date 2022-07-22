@@ -9,5 +9,4 @@ redirect_from:
 # About
 
 
-## 보유기술
 
