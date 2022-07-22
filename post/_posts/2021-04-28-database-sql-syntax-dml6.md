@@ -43,7 +43,7 @@ tags: [database]
     
     ~~~
 
-  - ## UPDATE
+- ## UPDATE
 
     : 새로운 tuple이 아니라, 특정 값만 바꾸고 싶다.
 
@@ -75,7 +75,7 @@ tags: [database]
     --total_credit (전체들은 학점) 업데이트 하는 것 
     ~~~
 
-    - ##### CASE Statement for Conditional Update 
+  - ##### CASE Statement for Conditional Update 
 
       ~~~sql
       /*"Increase salaries of instructors whose salary is over $100,000 by 3%, 
@@ -96,7 +96,7 @@ tags: [database]
       ~~~
 
 
-  - ## DELETE 
+- ## DELETE 
 
     ~~~sql
     --"Delete all instructors"

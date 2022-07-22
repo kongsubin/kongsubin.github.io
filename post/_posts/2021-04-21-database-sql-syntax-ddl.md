@@ -10,7 +10,7 @@ tags: [database]
 
 # DDL - Data Definition Language
 
->s DB를 정의하고, DB에 table을 만들고, 삭제할 때 사용하는 언어이다. 즉, Table을 정의하고 구조를 나타내는데 사용되는 언어이다. 
+> DB를 정의하고, DB에 table을 만들고, 삭제할 때 사용하는 언어이다. 즉, Table을 정의하고 구조를 나타내는데 사용되는 언어이다. 
 
 - ### CREATE
 

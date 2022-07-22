@@ -5,9 +5,10 @@ sitemap: false
 categories: [study]
 tags: [flask]
 ---
-## Conda를 사용하여 플라스크 개발환경 구축
+# Conda를 사용하여 플라스크 개발환경 구축
 <br>
 <br>
+
 ## 1. 가상 환경 만들기 
 
 conda를 사용하여 가상환경을 만들어 볼 것이다. 

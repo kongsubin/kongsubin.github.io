@@ -10,7 +10,7 @@ tags: [database]
 
 # DML - Data Manipulation Language
 
-=> DB에서 Data를 가져오거나, 변경, 삭제, 추가할 때 사용한다. 
+> DB에서 Data를 가져오거나, 변경, 삭제, 추가할 때 사용한다. 
 
 ## DML의 기본 문법 
 
