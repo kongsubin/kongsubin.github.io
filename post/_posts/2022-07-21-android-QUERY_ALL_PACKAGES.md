@@ -62,5 +62,5 @@ tags: [android]
 <br>
 <br>
 <br>
-참고한 블로그 
-https://kkh0977.tistory.com/1789
+<br>
+[참고한 블로그](https://kkh0977.tistory.com/1789)
