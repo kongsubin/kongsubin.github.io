@@ -5,6 +5,7 @@ sitemap: false
 categories: [study]
 tags: [ios]
 ---
+# IOS 앱 심사 리젝 해결
 
 # 앱 심사 리젝 
 
