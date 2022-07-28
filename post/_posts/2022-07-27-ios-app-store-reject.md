@@ -7,8 +7,6 @@ tags: [ios]
 ---
 # IOS 앱 심사 리젝 해결
 
-# 앱 심사 리젝 
-
 > ### 2.1.0 Performance : App Completeness
 
 <br>
