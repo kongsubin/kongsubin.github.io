@@ -6,6 +6,9 @@ categories: [study]
 tags: [error, java]
 ---
 
+# javax.net.ssl.SSLException Received fatal alert protocol_version
+
+
 # 문제 상황
 프로젝트 운영 중에, 외부 API 통싱할 때, 아래의 에러가 발생하는 현상이 있었다. 
 
