@@ -8,30 +8,9 @@ tags: [android]
 
 # Android Google MAP 사용하기
 
+# 구글 지도 API 키 발급하기.
 
-## 1. Google Maps Activity 추가
-
-new > Activity > Google Maps Activity 추가한다. 
-
-![](/assets/img/android/google_map_api/google_map_activity.png)
-
-## 2. 위치 라이브러리 의존성 추가
-
-모듈 수준 gradle.build파일에 아래의 내용을 추가한다. 
-
-~~~kotlin
-    // Google Maps Activity 추가시, 자동으로 추가되어있음. 
-    implementation 'com.google.android.gms:play-services-maps:18.1.0'
-    // 위치 정보 추가
-    implementation 'com.google.android.gms:play-services-location:20.0.0'
-~~~
-
-<br>
-<br>
-
-## 3. 구글 지도 API 키 발급받기.
-
-### 3-1. 프로젝트 생성. 
+## 1. 프로젝트 생성. 
 
 구글 지도 API를 생성하기 위해, 우선 프로젝트를 먼저 생성한다. 
 
@@ -46,7 +25,7 @@ new > Activity > Google Maps Activity 추가한다.
 ![](/assets/img/android/google_map_api/create_project2.png)
 
 
-### 3-2. android API 사용설정하기.
+## 2. android API 사용설정하기.
 
 프로젝트가 생성이 되었으면 이제 android API 사용을 설정해준다. 
 
@@ -60,7 +39,7 @@ Maps SDK for Android 클릭한다.
 ![](/assets/img/android/google_map_api/create_api_android3.png)
 
 
-### 3-3 API 생성하기.
+## 3 API 생성하기.
 
 API사용 설정까지 끝마쳤으면 API를 생성하기만 하면 된다. 
 
@@ -85,13 +64,38 @@ API사용 설정까지 끝마쳤으면 API를 생성하기만 하면 된다.
 <br>
 <br>
 
-## 4. local.properties 설정하기.
+<br>
+<br>
+
+### 자 여기까지 API 생성을 하였다. 그럼 실제로 API를 사용하여 구글맵을 에뮬레이터에 띄워보자!!
+
+# 구글 지도 띄우기.
+
+## 1. Google Maps Activity 추가
+
+구글 맵을 띄울 Activity를 하나 추가한다.
+
+new > Activity > Google Maps Activity 추가를 하면, 필요한 라이브러리나 플러그인이 자동으로 생성이 된다. 
+
+![](/assets/img/android/google_map_api/google_map_activity.png)
+
+## 2. 위치 라이브러리 의존성 추가
+
+모듈 수준 gradle.build파일에 위치정보 라이브러리를 추가하여 현재 위치 정보도 사용할 수 있게 한다. 
+
+~~~kotlin
+    // Google Maps Activity 추가시, 자동으로 추가되어있음. 
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    // 위치 정보 추가
+    implementation 'com.google.android.gms:play-services-location:20.0.0'
+~~~
+
+## 3. local.properties 설정하기.
 
 이제 local.properties에 API KEY를 설정하여 구글 맵을 사용해보자!
 
 ### gitignore 설정하기.
-
-local.properties가 원격저장소에 올라가는 것을 방지하기 위해 우선, gitignore을 적용해준다. 
+> local.properties가 원격저장소에 올라가는 것을 방지하기 위해, 우선 gitignore을 적용해준다. 
 
 ~~~kotlin
 ### Android ###
@@ -104,16 +108,14 @@ local.properties
 ~~~
 
 ### local.properties 설정하기.
-
-gitignore을 적용했다면, local.properties에 아까 복사해둔 Google API Key 값을 설정해준다. 
+> gitignore을 적용했다면, local.properties에 아까 복사해둔 Google API Key 값을 설정해준다. 
 
 ~~~kotlin
 GOOGLE_MAPS_API_KEY="클립보드에 복사했던 API KEY 붙여넣기"
 ~~~
 
 ### build.gradle 설정하기.
-
-마지막으로 프로젝트 내에서 local.properties에 설정한 값을 사용할 수 있게 모듈 수준의 build.gradle파일을 설정한다. 
+> 프로젝트 내에서 local.properties에 설정한 값을 사용할 수 있게 모듈 수준의 build.gradle파일을 설정한다. 
 
 ~~~kotlin
 Properties properties = new Properties()
@@ -130,7 +132,7 @@ android {
 ~~~
 
 ### manifest 파일 설정하기.
-
+> 마지막으로 manifest파일에 구글 키 alias를 설정해준다. 
 ~~~kotlin
 <application>
     <meta-data
@@ -143,8 +145,7 @@ android {
 <br>
 <br>
 
-## 5. 프로젝트 구동 후 확인하기. 
-
+## 4. 프로젝트 구동 후 확인하기. 
 프로젝트 구동 후, map 지도가 다음과 같이 뜬다면 성공한 것이다!!!
 
 ![](/assets/img/android/google_map_api/result.png)
