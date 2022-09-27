@@ -2,16 +2,16 @@
 layout: post
 title: [Android 앱 Google 심사 리젝 해결] - 고해상도 아이콘 (명의 도용 정책 위반)
 sitemap: false
+description: >
+  고해상도 아이콘 (명의 도용 정책 위반)
 categories: [study]
 tags: [android]
 ---
 # Android 앱 Google 심사 리젝
 
-> ### 고해상도 아이콘 (명의 도용 정책 위반)
+> 고해상도 아이콘 (명의 도용 정책 위반)으로 안드로이드 구글 심사 리젝을 당했다.... 
 
-<br>
-
-## 심사 리젝 
+# 심사 리젝 
 
 android 앱 심사를 올렸는데, update reject 회신이 구글로부터 돌아왔다. 
 

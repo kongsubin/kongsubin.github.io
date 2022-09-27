@@ -2,16 +2,15 @@
 layout: post
 title: [IOS 앱 심사 리젝 해결] - 2.1.0 Performance App Completeness 
 sitemap: false
+description: >
+  2.1.0 Performance : App Completeness
 categories: [study]
 tags: [ios]
 ---
 # IOS 앱 심사 리젝 해결
 
-> ### 2.1.0 Performance : App Completeness
 
-<br>
-
-## 첫번째 심사 리젝 
+# 첫번째 심사 리젝 
 
 ios 앱 심사를 올린 지 얼마되지 않고 앱 심사 거절 회신이 돌아왔다.
 
@@ -25,7 +24,7 @@ ios 앱 심사를 올린 지 얼마되지 않고 앱 심사 거절 회신이 돌
 <br>
 <br>
 
-## 두번째 심사 리젝
+# 두번째 심사 리젝
 
 하루 뒤, 다시 심사 리젝 회신이 돌아왔다. 
 

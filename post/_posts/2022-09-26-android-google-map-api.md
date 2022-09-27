@@ -8,6 +8,8 @@ tags: [android]
 
 # Android Google MAP 사용하기
 
+> 안드로이드에서 구글 MAP API를 사용하는 방법을 알아보자! 
+
 # 구글 지도 API 키 발급하기.
 
 ## 1. 프로젝트 생성. 
@@ -37,7 +39,7 @@ Maps SDK for Android 클릭한다.
 
 저장 클릭을 하면 다음과 같이 리스트에 정보가 뜨는 것 을 볼 수 있다. 
 ![](/assets/img/android/google_map_api/create_api_android3.png)
-
+![](/assets/img/android/google_map_api/create_api_android4.png)
 
 ## 3 API 생성하기.
 
@@ -63,11 +65,15 @@ API사용 설정까지 끝마쳤으면 API를 생성하기만 하면 된다.
 
 <br>
 <br>
-
 <br>
 <br>
 
 ### 자 여기까지 API 생성을 하였다. 그럼 실제로 API를 사용하여 구글맵을 에뮬레이터에 띄워보자!!
+
+<br>
+<br>
+<br>
+<br>
 
 # 구글 지도 띄우기.
 
@@ -133,6 +139,7 @@ android {
 
 ### manifest 파일 설정하기.
 > 마지막으로 manifest파일에 구글 키 alias를 설정해준다. 
+
 ~~~kotlin
 <application>
     <meta-data
