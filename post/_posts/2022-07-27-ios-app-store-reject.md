@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [IOS 앱 심사 리젝 해결] - 2.1.0 Performance App Completeness 
+title: 2.1.0 Performance App Completeness 
 sitemap: false
 description: >
   2.1.0 Performance : App Completeness
