@@ -9,15 +9,15 @@ tags: [error, java]
 # javax.net.ssl.SSLException Received fatal alert protocol_version
 
 
-# 문제 상황
-프로젝트 운영 중에, 외부 API 통싱할 때, 아래의 에러가 발생하는 현상이 있었다. 
+## 문제 상황
+프로젝트 운영 중에, 외부 API 통신할 때, 아래의 에러가 발생하는 현상이 있었다. 
 
 > javax.net.ssl.SSLException: Received fatal alert: protocol_version
 
 <br>
 <br>
 
-# 문제 원인
+## 문제 원인
 찾아보니, http 통신할 때, 요구하는 SSL 프로토콜버전을 충족시키지 못하여 나는 에러였다.  
 <br>
 
@@ -90,6 +90,6 @@ private static CloseableHttpClient buildHttpClient() {
 <br>
 
 
-[스택오버플로우](https://stackoverflow.com/questions/16541627/javax-net-ssl-sslexception-received-fatal-alert-protocol-version)
-
-[참고한 블로그](https://juns-lee.tistory.com/entry/Java-SSLTLS-%EC%A7%80%EC%9B%90-%EB%B2%84%EC%A0%84%EA%B3%BC-%EB%94%94%ED%8F%B4%ED%8A%B8-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EB%B3%80%EA%B2%BD)
+참고 
+- [스택오버플로우](https://stackoverflow.com/questions/16541627/javax-net-ssl-sslexception-received-fatal-alert-protocol-version)
+- [[Java] SSL/TLS 지원 버전과 디폴트 프로토콜 변경](https://juns-lee.tistory.com/entry/Java-SSLTLS-%EC%A7%80%EC%9B%90-%EB%B2%84%EC%A0%84%EA%B3%BC-%EB%94%94%ED%8F%B4%ED%8A%B8-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-%EB%B3%80%EA%B2%BD)
