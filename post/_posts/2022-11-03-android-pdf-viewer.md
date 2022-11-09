@@ -250,14 +250,15 @@ AndroidManifest.xml file에 아래와 같이 권한을 주면 된다.
 ~~~
 
 
-<br><br><br>
+<br><br><br><br><br>
 
 참고
 - [Android - MediaStore를 사용하여 사진 촬영 기능](https://kongsubin.github.io/post/study/2022-07-14-android-vesrion10-scoped-storage/)
 - [Android Developer Document](https://developer.android.com/guide/topics/providers/document-provider?hl=ko)
 - [안드로이드 - SAF(Storage Access Framework)로 파일 읽고 쓰는 방법](https://codechacha.com/ko/android-storage-access-framework/)
-- [StackOverFlow - Exception open failed: EACCES (Permission denied) on Android](https://stackoverflow.com/questions/8854359/exception-open-failed-eacces-permission-denied-on-android)
-- 
+- [StackOverFlow - Exception open failed EACCES (Permission denied) on Android](https://stackoverflow.com/questions/8854359/exception-open-failed-eacces-permission-denied-on-android)
+  
+  
 
 
 
