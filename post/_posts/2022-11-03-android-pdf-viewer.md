@@ -5,7 +5,8 @@ sitemap: false
 categories: [study]
 tags: [android]
 description: >
-  안드로이드 버전 10 이상 파일 저장 방식 변화로 인해 PDF Viewer 기능 에러 발생 - open failed: EACCES (Permission denied)
+  안드로이드 버전 10 이상 파일 저장 방식 변화로 인해 PDF Viewer 기능 에러 발생 
+  - open failed: EACCES (Permission denied)
 ---
 
 # Android PDF Viewer (SAF 사용)
@@ -18,20 +19,25 @@ description: >
 open failed: EACCES (Permission denied)
 ~~~
 
+<br><br>
+
 ## 문제 원인
 안드로이드 API 29 (Q) 이상 부터, 보안상의 이유로 외부 저장소에 접근하는 것이 불가능하게 됨.
 
 따라서 외부 저장소에 파일을 쓰고 읽는 것이 거부됨. 
+
+<br><br>
 
 ## 해결 방법 
 1. android:preserveLegacyExternalStorage="true" 선언 
 2. MANAGE_EXTERNAL_STORAGE 권한 사용 
 3. MediaStore or SAF(Storage Access Framework) 사용
 
+<br><br>
 
 ## 1. android:preserveLegacyExternalStorage="true"
-    AndroidManifest.xml file에 아래와 같이 선언하면 임시적으로 해결이 된다. 
-    ~~~xml
+AndroidManifest.xml file에 아래와 같이 선언하면 임시적으로 해결이 된다. 
+~~~xml
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -40,34 +46,38 @@ open failed: EACCES (Permission denied)
             ...
             android:preserveLegacyExternalStorage="true"
             ...
-    ~~~
+ ~~~
 
-    하지만 이는 임시적인 방편일뿐 문제를 완벽하게 해결하지 못한다. 기각!
+하지만 이는 임시적인 방편일뿐 문제를 완벽하게 해결하지 못한다. 기각!
+
+<br><br>
 
 ## 2. MANAGE_EXTERNAL_STORAGE 권한 사용 
-    AndroidManifest.xml file에 아래와 같이 권한을 주면 된다.  
-    ~~~xml
+AndroidManifest.xml file에 아래와 같이 권한을 주면 된다.  
+~~~xml
     <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
-    ~~~
+~~~
 
-    하지만 이 방법은 구글에게 해당 권한을 사용하는 합당한 이유를 상세히 알려야한다. 
+하지만 이 방법은 구글에게 해당 권한을 사용하는 합당한 이유를 상세히 알려야한다. 
 
-    하지만 우리 앱은 그런 합당한 이유가 없으므로 기각!
+하지만 우리 앱은 그런 합당한 이유가 없으므로 기각!
 
+<br><br>
 
 ## 3. MediaStore or SAF(Storage Access Framework) 사용
-    MediaStore나 SAF는 외부 저장소 파일에 접근 할 수 있게 도와주는 기능이다. 
+ MediaStore나 SAF는 외부 저장소 파일에 접근 할 수 있게 도와주는 기능이다. 
 
-    ### MediaStore 
+### MediaStore 
     이미지, 동영상 파일 처리시 주로 사용
 
-    ### SAF
+### SAF
     txt, pdf 파일 등을 탐색하고 여는 작업을 간편하게 해주는 프레임워크. 
 
 
-    문제 없이 사용할 수 있는 유일한 방법이다. 
+문제 없이 사용할 수 있는 유일한 방법이다. 
 
-    따라서 SAF를 사용하여 PDF Viewer기능을 처리하였다.
+따라서 SAF를 사용하여 PDF Viewer기능을 처리하였다.
+
 <br><br>
 
 
