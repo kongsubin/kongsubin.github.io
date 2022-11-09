@@ -1,12 +1,14 @@
 ---
 layout: post
-title: Android PDF Viewer 
+title: Android PDF Viewer (SAF 사용)
 sitemap: false
 categories: [study]
 tags: [android]
+description: >
+  안드로이드 버전 10 이상 파일 저장 방식 변화로 인해 PDF Viewer 기능 에러 발생 - open failed: EACCES (Permission denied)
 ---
 
-# Android PDF Viewer 
+# Android PDF Viewer (SAF 사용)
 
 ## 문제 상황
 안드로이드에서 PDF Viewer 기능 사용 시, 에러로 인한 PDF Viewer 기능이 제대로 작동하지 않음. 
@@ -27,45 +29,45 @@ open failed: EACCES (Permission denied)
 3. MediaStore or SAF(Storage Access Framework) 사용
 
 
-### 1. android:preserveLegacyExternalStorage="true"
-AndroidManifest.xml file에 아래와 같이 선언하면 임시적으로 해결이 된다. 
-~~~xml
+## 1. android:preserveLegacyExternalStorage="true"
+    AndroidManifest.xml file에 아래와 같이 선언하면 임시적으로 해결이 된다. 
+    ~~~xml
 
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-<application
-        ...
-        android:preserveLegacyExternalStorage="true"
-        ...
-~~~
+    <application
+            ...
+            android:preserveLegacyExternalStorage="true"
+            ...
+    ~~~
 
-하지만 이는 임시적인 방편일뿐 문제를 완벽하게 해결하지 못한다. 기각!
+    하지만 이는 임시적인 방편일뿐 문제를 완벽하게 해결하지 못한다. 기각!
 
-### 2. MANAGE_EXTERNAL_STORAGE 권한 사용 
-AndroidManifest.xml file에 아래와 같이 권한을 주면 된다.  
-~~~xml
-<uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
-~~~
+## 2. MANAGE_EXTERNAL_STORAGE 권한 사용 
+    AndroidManifest.xml file에 아래와 같이 권한을 주면 된다.  
+    ~~~xml
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    ~~~
 
-하지만 이 방법은 구글에게 해당 권한을 사용하는 합당한 이유를 상세히 알려야한다. 
+    하지만 이 방법은 구글에게 해당 권한을 사용하는 합당한 이유를 상세히 알려야한다. 
 
-하지만 우리 앱은 그런 합당한 이유가 없으므로 기각!
-
-
-### 3. MediaStore or SAF(Storage Access Framework) 사용
-MediaStore나 SAF는 외부 저장소 파일에 접근 할 수 있게 도와주는 기능이다. 
-
-### MediaStore 
-이미지, 동영상 파일 처리시 주로 사용
-
-### SAF
-txt, pdf 파일 등을 탐색하고 여는 작업을 간편하게 해주는 프레임워크. 
+    하지만 우리 앱은 그런 합당한 이유가 없으므로 기각!
 
 
-문제 없이 사용할 수 있는 유일한 방법이다. 
+## 3. MediaStore or SAF(Storage Access Framework) 사용
+    MediaStore나 SAF는 외부 저장소 파일에 접근 할 수 있게 도와주는 기능이다. 
 
-그래서 SAF를 사용하여 PDF Viewer기능을 처리하였다.
+    ### MediaStore 
+    이미지, 동영상 파일 처리시 주로 사용
+
+    ### SAF
+    txt, pdf 파일 등을 탐색하고 여는 작업을 간편하게 해주는 프레임워크. 
+
+
+    문제 없이 사용할 수 있는 유일한 방법이다. 
+
+    따라서 SAF를 사용하여 PDF Viewer기능을 처리하였다.
 <br><br>
 
 
@@ -77,7 +79,7 @@ txt, pdf 파일 등을 탐색하고 여는 작업을 간편하게 해주는 프�
 
 크게 달라진점은, 그냥 외부 저장소에 직접 접근하여 파일을 생성하냐, SAF를 이용하여 파일을 생성하냐의 차이이다. 
 
-### 기존 코드
+## 기존 코드
 ~~~java 
 
     private String pdfDownloadUrl = "https://kongsub.co.kr/download/test.pdf";
@@ -149,7 +151,7 @@ txt, pdf 파일 등을 탐색하고 여는 작업을 간편하게 해주는 프�
     }
 ~~~
 
-### 변경 코드
+## 변경 코드
 ~~~java
 
     private final CREATE_FILE_CODE = 5050;
@@ -241,9 +243,10 @@ txt, pdf 파일 등을 탐색하고 여는 작업을 간편하게 해주는 프�
 <br><br><br>
 
 참고
+- [Android - MediaStore를 사용하여 사진 촬영 기능](https://kongsubin.github.io/post/study/2022-07-14-android-vesrion10-scoped-storage/)
 - [Android Developer Document](https://developer.android.com/guide/topics/providers/document-provider?hl=ko)
 - [안드로이드 - SAF(Storage Access Framework)로 파일 읽고 쓰는 방법](https://codechacha.com/ko/android-storage-access-framework/)
-- [StackOverFlow - Exception 'open failed: EACCES (Permission denied)' on Android](https://stackoverflow.com/questions/8854359/exception-open-failed-eacces-permission-denied-on-android)
+- [StackOverFlow - Exception open failed: EACCES (Permission denied) on Android](https://stackoverflow.com/questions/8854359/exception-open-failed-eacces-permission-denied-on-android)
 - 
 
 
