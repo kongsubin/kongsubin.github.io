@@ -81,13 +81,15 @@ AndroidManifest.xml file에 아래와 같이 권한을 주면 된다.
 <br><br>
 
 
-### 로직
+## 로직
 1. PDF 다운로드 URL을 URLConnection을 이용하여 input stream을 연다. 
 2. SAF를 이용하여 파일을 생성한 뒤, output stream을 연다. 
 3. input stream으로 read한 데이터를 output stream에 write 한다. 
 4. intent로 pdf uri를 넘겨 pdf viewer를 실행한다. 
 
 크게 달라진점은, 그냥 외부 저장소에 직접 접근하여 파일을 생성하냐, SAF를 이용하여 파일을 생성하냐의 차이이다. 
+
+<br><br>
 
 ## 기존 코드
 ~~~java 
