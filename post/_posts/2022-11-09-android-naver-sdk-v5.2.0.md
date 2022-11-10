@@ -22,19 +22,24 @@ description: >
 
 ## 수정 사항 
 - OAuthLogin deprecated 
-  &rightarrow; NaverIdLoginSDK
+* &rightarrow; NaverIdLoginSDK
+<br>
 
 - OAuthLogin.getInstance() deprecated 
-  &rightarrow; NaverIdLoginSDK.INSTANCE
+* &rightarrow; NaverIdLoginSDK.INSTANCE
+<br>
 
 - OAuthLogin.init deprecated 
-  &rightarrow; NaverIdLoginSDK.initialize
+* &rightarrow; NaverIdLoginSDK.initialize
+<br>
 
 - OAuthLogin.startOauthLoginActivity deprecated 
-  &rightarrow; NaverIdLoginSDK.authenticate
+* &rightarrow; NaverIdLoginSDK.authenticate
+<br>
 
 - OAuthLoginHandler deprecated 
-  &rightarrow; OAuthLoginCallback
+* &rightarrow; OAuthLoginCallback
+<br>
 
 ### 기존 코드
 ~~~java 
