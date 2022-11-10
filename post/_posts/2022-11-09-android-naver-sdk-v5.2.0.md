@@ -5,7 +5,7 @@ sitemap: false
 categories: [study]
 tags: [android]
 description: >
-  안드로이드 Target SDK Version 30 => 31로 업데이트함에 따라, 네이버 로그인 SDK도 업데이트. 
+  안드로이드 Target SDK Version 30 => 31로 업데이트함에 따라, 네아로 버전 업데이트. 
 ---
 
 # 네이버 로그인 SDK 4.2.6 => 5.2.0
@@ -14,18 +14,27 @@ description: >
 ## 상황 
 [Google의 권고사항](https://developer.android.com/google/play/requirements/target-sdk#pre12)에 따라 운영중이던 SDK Version을 30에서 31로 update하였다.
 
-31로 Targeting을 하니, Androidmenifest.xml 파일에 android:exported를 명시를 해주어야했다.
+31로 Targeting을 하니, Androidmanifest.xml 파일에 android:exported를 명시를 해주어야했다.
 
 하지만 우리 앱에서 사용하는 네아로 v4.2.6에는 android:exported를 명시되지 않았고, 이는 v5.0.0 부터 대응이 된다고 [naver login release notes](https://github.com/naver/naveridlogin-sdk-android/wiki/%EB%A6%B4%EB%A6%AC%EC%A6%88-%EB%85%B8%ED%8A%B8)에 나와있었다. 
 
 따라서, 업데이트가 필수적인 상황이었고 이왕 업데이트할거 최신 버전으로 업데이트 하기로 결정을 내렸다. 
 
 ## 수정 사항 
-- OAuthLogin deprecated => NaverIdLoginSDK
-- OAuthLogin.getInstance() deprecated => NaverIdLoginSDK.INSTANCE
-- OAuthLogin.init deprecated => NaverIdLoginSDK.initialize
-- OAuthLogin.startOauthLoginActivity deprecated => NaverIdLoginSDK.authenticate
-- OAuthLoginHandler deprecated => OAuthLoginCallback
+- OAuthLogin deprecated 
+  &rightarrow; NaverIdLoginSDK
+
+- OAuthLogin.getInstance() deprecated 
+  &rightarrow; NaverIdLoginSDK.INSTANCE
+
+- OAuthLogin.init deprecated 
+  &rightarrow; NaverIdLoginSDK.initialize
+
+- OAuthLogin.startOauthLoginActivity deprecated 
+  &rightarrow; NaverIdLoginSDK.authenticate
+
+- OAuthLoginHandler deprecated 
+  &rightarrow; OAuthLoginCallback
 
 ### 기존 코드
 ~~~java 
@@ -130,4 +139,4 @@ description: >
 
 
 참고
-[네이버 공식 개발 문서](https://developers.naver.com/docs/login/android/android.md)
+- [네이버 공식 개발 문서](https://developers.naver.com/docs/login/android/android.md)
