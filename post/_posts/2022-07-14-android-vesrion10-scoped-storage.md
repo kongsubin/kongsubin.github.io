@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android - MediaStore을 사용하여 사진 촬영 구현
+title: Android MediaStore을 사용하여 사진 촬영 구현 (JAVA)
 sitemap: false
 categories: [study]
 tags: [android]

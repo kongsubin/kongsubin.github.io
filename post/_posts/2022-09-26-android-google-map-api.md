@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android Google MAP API 사용하기
+title: Android Google MAP API 사용하기 (Kotlin)
 sitemap: false
 categories: [study]
 tags: [android]

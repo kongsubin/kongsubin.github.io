@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android PDF Viewer (SAF 사용)
+title: Android PDF Viewer - SAF 사용 (JAVA)
 sitemap: false
 categories: [study]
 tags: [android]
@@ -19,14 +19,11 @@ description: >
 open failed: EACCES (Permission denied)
 ~~~
 
-<br><br>
-
 ## 문제 원인
 안드로이드 API 29 (Q) 이상 부터, 보안상의 이유로 외부 저장소에 접근하는 것이 불가능하게 됨.
 
 따라서 외부 저장소에 파일을 쓰고 읽는 것이 거부됨. 
 
-<br><br>
 
 ## 해결 방법 
 1. android:preserveLegacyExternalStorage="true" 선언 
@@ -66,17 +63,12 @@ AndroidManifest.xml file에 아래와 같이 권한을 주면 된다.
 
 ## 3. MediaStore or SAF(Storage Access Framework) 사용
  MediaStore나 SAF는 외부 저장소 파일에 접근 할 수 있게 도와주는 기능이다. 
-
 ### MediaStore 
     이미지, 동영상 파일 처리시 주로 사용
-
 ### SAF
     txt, pdf 파일 등을 탐색하고 여는 작업을 간편하게 해주는 프레임워크. 
 
-
-문제 없이 사용할 수 있는 유일한 방법이다. 
-
-따라서 SAF를 사용하여 PDF Viewer기능을 처리하였다.
+SAF를 사용하여 PDF Viewer기능을 처리하였다.
 
 <br><br>
 
