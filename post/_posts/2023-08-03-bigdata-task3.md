@@ -12,6 +12,8 @@ description: >
 
 ## T - 검정 표본
 > **** P VALUE가 작으면 귀무가설 기각~
+
+
 ### 단일표본 (ttest_1samp)
 
 - 표본집단의 평균으로 모집단의 평균을 검정
@@ -109,6 +111,7 @@ description: >
     #4 귀무가설 기각, 대립가설 채택 (0.0016 < 0.05)
     ```
     
+### alternative flag값 설명 
 
 ```python
 * 'two-sided': 표본의 기본 분포의 평균 주어진 모집단 평균(`popmean`)과 다릅니다. 
