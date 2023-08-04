@@ -63,7 +63,9 @@ author1:
     # paypal:          <username>
     # download:        <url>
     # keybase          <username>
-google_analytics:   G-GZQNY1L5NB
+
+
+
 # Another author (optional)
 author2:
   name:              <firtname> <lastname>
