@@ -104,7 +104,6 @@ print(data_new['range'].value_counts())
 <details>
 <summary>예제</summary>
 <div markdown="1">
-<span style="color:blue">
 
 ### 예제 문제 
 문제 : 고객 891명에 대한 학습용 데이터를 이용하여 생존여부를 예측하는 모형만들기 
@@ -114,9 +113,11 @@ print(data_new['range'].value_counts())
 모델의 성능은 ROC-AUC 평가지표에 따라 매겨짐
 
 제출 형식
-| PassengerId | Servivied |
+| PassengerId | Servivied  |
+| --- | --- |
 | 892 | 0 |
 | 893 | 1 |
+
    
 
 ### 1. 데이터 가져오기
@@ -158,7 +159,7 @@ print(data_new['range'].value_counts())
    print("\n기초통계량 확인하기")
    print(x_train.describe().T)
    ```
-</span>
+
 </div>
 </details>
 
@@ -177,7 +178,6 @@ print(data_new['range'].value_counts())
 <details>
 <summary>예제</summary>
 <div markdown="1">
-<span style="color:blue">
 
 ### 1. 불필요한 컬럼 삭제 
    ```python
@@ -255,7 +255,7 @@ print(data_new['range'].value_counts())
    # 크기변환 후, x_train 세트의 기초 통계량 확인
    print(x_train.describe().T)
    ```
-</span>
+
 </div>
 </details>
 
@@ -271,7 +271,6 @@ print(data_new['range'].value_counts())
 <details>
 <summary>예제</summary>
 <div markdown="1">
-<span style="color:blue">
 
 ### 1. 데이터 분리하기 
    ```python
@@ -322,7 +321,6 @@ print(data_new['range'].value_counts())
    print(pd.DataFrame(y_test_predict).head())
    ```
 
-</span>
 </div>
 </details>
 
