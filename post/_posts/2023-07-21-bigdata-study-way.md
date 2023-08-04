@@ -87,11 +87,11 @@ print(data_new['range'].value_counts())
 
 - [2023 빅데이터 분석 기사 실기 (필답형+작업형)](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=283045706)
 
-<img src="https://image.aladin.co.kr/product/28304/57/cover500/8965403197_2.jpg" height="100"/>
+<img src="https://image.aladin.co.kr/product/28304/57/cover500/8965403197_2.jpg" height="50"/>
 
 - [빅분기 자료방 바로가기](https://github.com/lovedlim/BigDataCertificationCourses)
 
-![](/assets/img/blog/bigdata/task2_list.png)
+![](/assets/img/blog/bigdata/task2-list.png)
 
 문제를 풀면서, 단계를 익혀가고 각 단계에서 필요로하는 함수 및 코딩 능력을 연습하면 된다. 
 
@@ -104,6 +104,7 @@ print(data_new['range'].value_counts())
 <details>
 <summary>예제</summary>
 <div markdown="1">
+<span style="color:blue">
 
 ### 예제 문제 
 문제 : 고객 891명에 대한 학습용 데이터를 이용하여 생존여부를 예측하는 모형만들기 
@@ -113,9 +114,9 @@ print(data_new['range'].value_counts())
 모델의 성능은 ROC-AUC 평가지표에 따라 매겨짐
 
 제출 형식
-> PassengerId, Servivied
-892, 0
-893, 1
+| PassengerId | Servivied |
+| 892 | 0 |
+| 893 | 1 |
    
 
 ### 1. 데이터 가져오기
@@ -125,9 +126,9 @@ print(data_new['range'].value_counts())
 
    # 문제에서 제시해줌
    print("데이터 가져오기") 
-   x_train = pd.read_csv('./bigData-main/x_train.csv', encoding='CP949')
-   x_test = pd.read_csv('./bigData-main/x_test.csv', encoding='CP949')
-   y_train = pd.read_csv('./bigData-main/y_train.csv', encoding='CP949')
+   x_train = pd.read_csv('./bigData-main/x_train.csv')
+   x_test = pd.read_csv('./bigData-main/x_test.csv')
+   y_train = pd.read_csv('./bigData-main/y_train.csv')
    print(x_train.head())
    print(x_test.head())
    print(y_train.head())
@@ -157,7 +158,7 @@ print(data_new['range'].value_counts())
    print("\n기초통계량 확인하기")
    print(x_train.describe().T)
    ```
-
+</span>
 </div>
 </details>
 
@@ -176,6 +177,7 @@ print(data_new['range'].value_counts())
 <details>
 <summary>예제</summary>
 <div markdown="1">
+<span style="color:blue">
 
 ### 1. 불필요한 컬럼 삭제 
    ```python
@@ -253,7 +255,7 @@ print(data_new['range'].value_counts())
    # 크기변환 후, x_train 세트의 기초 통계량 확인
    print(x_train.describe().T)
    ```
-
+</span>
 </div>
 </details>
 
@@ -269,6 +271,7 @@ print(data_new['range'].value_counts())
 <details>
 <summary>예제</summary>
 <div markdown="1">
+<span style="color:blue">
 
 ### 1. 데이터 분리하기 
    ```python
@@ -319,6 +322,7 @@ print(data_new['range'].value_counts())
    print(pd.DataFrame(y_test_predict).head())
    ```
 
+</span>
 </div>
 </details>
 
