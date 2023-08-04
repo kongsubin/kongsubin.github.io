@@ -15,7 +15,7 @@ description: >
 
 - [빅분기 자료방 바로가기](https://github.com/lovedlim/BigDataCertificationCourses)
 
-![](assets/img/blog/bigdata/task1_list.png)
+![](/assets/img/blog/bigdata/task1_list.png)
 
 문제를 풀어서 답을 구한다기 보다는, 
 
@@ -86,7 +86,12 @@ print(data_new['range'].value_counts())
 나는 책을 통해 문제를 푸는 방법에 대해 익혔고, 자료방에 올라온 문제를 통해 연습을 했다. 
 
 - [2023 빅데이터 분석 기사 실기 (필답형+작업형)](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=283045706)
+
+<img src="https://image.aladin.co.kr/product/28304/57/cover500/8965403197_2.jpg" height="100"/>
+
 - [빅분기 자료방 바로가기](https://github.com/lovedlim/BigDataCertificationCourses)
+
+![](/assets/img/blog/bigdata/task2_list.png)
 
 문제를 풀면서, 단계를 익혀가고 각 단계에서 필요로하는 함수 및 코딩 능력을 연습하면 된다. 
 
@@ -100,17 +105,22 @@ print(data_new['range'].value_counts())
 <summary>예제</summary>
 <div markdown="1">
 
-   ### 예제 문제 
-   문제 : 고객 891명에 대한 학습용 데이터를 이용하여 생존여부를 예측하는 모형만들기 
-   이를 평가용 데이터에 저장하여 승객의 생존 여부 예측값을 다음과 같은 형식의 csv 파일로 생성하기
-   모델의 성능은 ROC-AUC 평가지표에 따라 매겨짐
-   제출 형식
-   > PassengerId, Servivied
-      892, 0
-      893, 1
+### 예제 문제 
+문제 : 고객 891명에 대한 학습용 데이터를 이용하여 생존여부를 예측하는 모형만들기 
+
+이를 평가용 데이터에 저장하여 승객의 생존 여부 예측값을 다음과 같은 형식의 csv 파일로 생성하기
+
+모델의 성능은 ROC-AUC 평가지표에 따라 매겨짐
+
+제출 형식
+> PassengerId, Servivied
+892, 0
+893, 1
    
+
+### 1. 데이터 가져오기
    ```python
-   # 1. 데이터 가져오기
+   
    import pandas as pd
 
    # 문제에서 제시해줌
@@ -121,21 +131,25 @@ print(data_new['range'].value_counts())
    print(x_train.head())
    print(x_test.head())
    print(y_train.head())
+   ```
 
-
-   # 2. 행과 열을 바꾸어 보기
+### 2. 행과 열 확인하기
+   ```python
+   
    print("\n행과 열을 바꾸어 보기")
    print(x_train.head().T)
    print(x_test.head().T)
    print(y_train.head().T)
 
-   # 3. 행열 확인하기
    print("\n행열 확인하기")
    print(x_train.shape)
    print(x_test.shape)
    print(y_train.shape)
+   ```
 
-   # 4. 요약정보 확인
+### 3. 요약정보 및 기초통계량 확인
+   ```python
+   
    print("\n요약정보 확인")
    print(x_train.info())
 
@@ -163,10 +177,10 @@ print(data_new['range'].value_counts())
 <summary>예제</summary>
 <div markdown="1">
 
+### 1. 불필요한 컬럼 삭제 
    ```python
    # 테스트 데이터인 x_test도 값을 예측하는 과정에 사용하므로 전처리 필요
 
-   # 1. 불필요한 컬럼 삭제 
    # cust_id 칼럼은 종속병수인 성별을 예측하는 정보가 아니라 key 역할이므로 삭제
    # 단, 최종 제출에는 사용되는 컬럼이므로 따로 저장
    x_test_cust_id = x_test['cust_id']
@@ -180,8 +194,10 @@ print(data_new['range'].value_counts())
    print(x_train.head())
    print(x_test.head())
    print(y_train.head())
+   ```
 
-   # 2. 결측치 처리
+### 2. 결측치 처리
+   ```python
    # 환불금액의 칼람에 2,295건의 결측치 존재
    print(x_train.isnull().sum())
    # 이는 환불금액 결측치는 이력이 없는 경우에 발생할 것으로 예상할 수 있음 -> 0으로 대체
@@ -190,10 +206,11 @@ print(data_new['range'].value_counts())
    # 결측치가 조치되었는지 확인
    print(x_train['환불금액'].isnull().sum())
    print(x_test['환불금액'].isnull().sum())
+   ```
+### 3. 이상치가 있는경우, 제거 또는 변경 작업 진행 
 
-   # 3. 이상치가 있는경우, 제거 또는 변경 작업 진행 
-
-   # 4. 범주형 변수를 인코딩하기 
+### 4. 범주형 변수를 인코딩하기 
+   ```python
    # 주구매상품 칼럼에서 중복을 제외한 값들을 확인
    print(x_train['주구매상품'].unique())
    # 주구매지점 칼럼에서 중복을 제외한 값들을 확인
@@ -221,8 +238,10 @@ print(data_new['range'].value_counts())
    print(encoder.classes_)
    # 테스트 데이터도 라벨 인코딩 수행
    x_test['주구매지점'] = encoder.fit_transform(x_test['주구매지점'])
+   ```
 
-   # 5. 표준화 크기로 변환 
+### 5. 표준화 크기로 변환 
+   ```python
    # 크기변환 전, x_train 세트의 기초 통계량 확인
    print(x_train.describe().T)
    from sklearn.preprocessing import StandardScaler
@@ -251,8 +270,8 @@ print(data_new['range'].value_counts())
 <summary>예제</summary>
 <div markdown="1">
 
+### 1. 데이터 분리하기 
    ```python
-   # 1. 데이터 분리하기 
    from sklearn.model_selection import train_test_split
 
    X_TRAIN, X_TEST, Y_TRIAN, Y_TEST = train_test_split(x_train, y_train, test_size=0.2)
@@ -261,8 +280,10 @@ print(data_new['range'].value_counts())
    print(X_TEST.shape)
    print(Y_TRIAN.shape)
    print(Y_TEST.shape)
+   ```
 
-   # 2. 데이터 학습 및 모델 생성 
+### 2. 데이터 학습 및 모델 생성 
+   ```python
    # XGBClassifer : 일반적으로 성능이 잘나옴 
    from xgboost import XGBClassifier 
    from sklearn.ensemble import RandomForestClassifier
@@ -273,9 +294,10 @@ print(data_new['range'].value_counts())
    # RandomForest
    model2 = RandomForestClassifier()
    model2.fit(X_TRAIN, Y_TRIAN)
+   ```
 
-
-   # 3. 결과 예측 및 모델 평가 
+### 3. 결과 예측 및 모델 평가 
+   ```python
    # 승객이 사망할 확률 : pd.DataFrame(model.predict_proba(x_test))[0]
    # 승객이 생존할 확률 : pd.DataFrame(model.predict_proba(x_test))[1]
 
@@ -289,8 +311,10 @@ print(data_new['range'].value_counts())
    print(roc_auc_score(Y_TEST, Y_TEST_PREDICT1))
    # model2
    print(roc_auc_score(Y_TEST, Y_TEST_PREDICT2))
+   ```
 
-   # 4. 모델 선정 
+### 4. 모델 선정 
+   ```python
    y_test_predict = pd.DataFrame(model2.predict(x_test)).rename(columns={0:'Survived'})
    print(pd.DataFrame(y_test_predict).head())
    ```
@@ -325,4 +349,5 @@ index의 경우 default 값이 true이므로 Fasle로 지정해줘야한다.
 작업형 3은 기출 자료가 아예 없다. 그래서 자료방에 올라온 내용을 토대로 정리하면서 공부했다. 
 - [빅분기 자료방 바로가기](https://github.com/lovedlim/BigDataCertificationCourses)
 
+아래는 내가 작업형 3을 대비하여 정리한 내용이다. 이제 6회 기출이 생겼으니, 7회 준비자들은 기출을 토대로 준비하면 좋을 듯 하다!
 - [정리 내용](https://kongsubin.github.io/post/study/2023-08-03-bigdata-task3/)
