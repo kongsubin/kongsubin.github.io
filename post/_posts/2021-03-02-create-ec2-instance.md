@@ -4,6 +4,7 @@ title: AWS EC2 Instance 생성하기
 sitemap: false
 categories: [study]
 tags: [aws]
+published: true
 ---
 # AWS EC2 Instance 생성하기 
 
