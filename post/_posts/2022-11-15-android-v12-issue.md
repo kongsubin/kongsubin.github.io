@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Android v12로 업데이트시, 발생하는 이슈 모음
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [android]
 description: >
   안드로이드 Target SDK Version 30 => 31로 업데이트함에 따라, 변경해야하는 사항 모음.
+published: true
 ---
 
 # Android v12로 업데이트시, 발생하는 이슈 모음

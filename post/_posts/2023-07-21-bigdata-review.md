@@ -1,11 +1,12 @@
 ---
 layout: post
 title: 빅데이터분석기사 제 6회 실기 후기 
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [info]
 description: >
   빅데이터분석기사 비전공자 6회 실기 후기~!
+published: true
 ---
 
 # 빅데이터분석기사 제6회 실기 후기 

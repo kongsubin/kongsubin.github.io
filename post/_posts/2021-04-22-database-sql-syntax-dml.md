@@ -1,11 +1,12 @@
 ---
 layout: post
 title: DML의 기본 문법 - SELECT, FROM, WHERE
-sitemap: false
+sitemap: true
 # description: > 
 # DML 무엇인지에, 그리고 기본적인 DML의 문법을 살펴본다. 
 categories: [study]
 tags: [database]
+published: true
 ---
 
 # DML - Data Manipulation Language

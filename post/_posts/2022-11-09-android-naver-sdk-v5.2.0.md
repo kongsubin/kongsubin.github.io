@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Android 네이버 로그인 SDK 4.2.6 => 5.2.0 (JAVA)
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [android]
 description: >
   안드로이드 Target SDK Version 30 => 31로 업데이트함에 따라, 네아로 버전 업데이트. 
+published: true
 ---
 
 # 네이버 로그인 SDK 4.2.6 => 5.2.0

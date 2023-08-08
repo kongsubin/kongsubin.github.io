@@ -1,11 +1,12 @@
 ---
 layout: post
 title: 고해상도 아이콘 (명의 도용 정책 위반)
-sitemap: false
+sitemap: true
 description: >
   고해상도 아이콘 (명의 도용 정책 위반)
 categories: [study]
 tags: [android]
+published: true
 ---
 # Android 앱 Google 심사 리젝
 

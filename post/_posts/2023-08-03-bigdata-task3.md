@@ -1,11 +1,12 @@
 ---
 layout: post
 title: 빅데이터분석기사 실기 작업형3 정리 
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [info]
 description: >
   빅데이터분석기사 실기 작업형3 정리 ~!
+published: true
 ---
 # 빅데이터분석기사 실기 작업형3 정리
 

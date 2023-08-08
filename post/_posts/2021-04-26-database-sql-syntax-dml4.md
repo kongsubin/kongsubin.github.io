@@ -1,11 +1,12 @@
 ---
 layout: post
 title: DML의 문법 - Nested Subqueries
-sitemap: false
+sitemap: true
 # description: > 
 # Nested Subqueries의 활용 및 예제 
 categories: [study]
 tags: [database]
+published: true
 ---
 
 # Nested Subqueries

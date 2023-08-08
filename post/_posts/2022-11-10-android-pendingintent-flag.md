@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Android Target SDK 31 이상일 때, FCM관련하여 변경되는 점. 
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [android]
 description: >
   안드로이드 Target SDK Version 30 => 31로 업데이트함에 따라, PendingIntent 생성시 "FLAG_IMMUTABLE" 또는 "FLAG_MUTABLE" Flag 추가 
+published: true
 ---
 
 # Android Target SDK 31 이상일 때, FCM관련하여 변경되는 점. 

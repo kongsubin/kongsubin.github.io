@@ -1,9 +1,10 @@
 ---
 layout: post
 title: JAVA ERROR
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [java]
+published: true
 ---
 # JAVA ERROR
 

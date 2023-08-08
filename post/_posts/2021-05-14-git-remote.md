@@ -1,9 +1,10 @@
 ---
 layout: post
 title: 리모트 저장소 추가 및 삭제, Pull Fetch, 
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [git]
+published: true
 ---
 
 # 리모트 저장소

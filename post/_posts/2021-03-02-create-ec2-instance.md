@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AWS EC2 Instance 생성하기 
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [aws]
 published: true

@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Android v13로 업데이트시 권한 이슈 
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [android]
 description: >
   안드로이드 Target SDK Version 31 => 33로 업데이트함에 따라, 변경된 Permission 
+published: true
 ---
 
 # Android v13 업데이트시, Permission 변경점

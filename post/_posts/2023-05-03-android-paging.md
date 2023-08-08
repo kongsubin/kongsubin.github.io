@@ -1,11 +1,12 @@
 ---
 layout: post
 title: coil과 PhotoView 사용하기 
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [android]
 description: >
   android coil을 사용하여 이미지 로딩 하기 & PhotoView를 이용하여 이미지 확대축소 하기 
+published: true
 ---
 
 ### Paging의 구성 요소

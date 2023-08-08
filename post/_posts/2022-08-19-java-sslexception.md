@@ -1,9 +1,10 @@
 ---
 layout: post
 title: javax.net.ssl.SSLException Received fatal alert protocol_version
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [error, java]
+published: true
 ---
 
 # javax.net.ssl.SSLException Received fatal alert protocol_version

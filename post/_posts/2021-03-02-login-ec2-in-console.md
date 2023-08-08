@@ -1,9 +1,10 @@
 ---
 layout: post
 title: EC2서버에 Console로 로그인 하기 
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [aws]
+published: true
 ---
 # EC2서버에 Console로 로그인 하기 
 

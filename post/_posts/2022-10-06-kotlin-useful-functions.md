@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Kotlin에서 알아야할 함수들.
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [kotlin]
+published: true
 ---
 
 # 코틀린에서 알아야할 함수 6가지.

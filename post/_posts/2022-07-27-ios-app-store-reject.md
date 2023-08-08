@@ -1,11 +1,12 @@
 ---
 layout: post
 title: 2.1.0 Performance App Completeness 
-sitemap: false
+sitemap: true
 description: >
   2.1.0 Performance : App Completeness
 categories: [study]
 tags: [ios]
+published: true
 ---
 # IOS 앱 심사 리젝 해결
 

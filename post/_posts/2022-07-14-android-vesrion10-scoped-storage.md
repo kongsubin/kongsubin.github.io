@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Android MediaStore을 사용하여 사진 촬영 구현 (JAVA)
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [android]
 description: >
   안드로이드 버전 10 이상 파일 저장 방식 변화로 인해 앱 카메라 기능 에러 발생. 
+published: true
 ---
 
 # Android - MediaStore을 사용하여 사진 촬영 구현

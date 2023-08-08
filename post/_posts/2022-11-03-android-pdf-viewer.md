@@ -1,12 +1,13 @@
 ---
 layout: post
 title: Android PDF Viewer - SAF 사용 (JAVA)
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [android]
 description: >
   안드로이드 버전 10 이상 파일 저장 방식 변화로 인해 PDF Viewer 기능 에러 발생 
   - open failed: EACCES (Permission denied)
+published: true
 ---
 
 # Android PDF Viewer (SAF 사용)

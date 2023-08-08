@@ -1,9 +1,10 @@
 ---
 layout: post
 title: 환경변수 설정 하기 (MAC os)
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [info]
+published: true
 ---
 
 # 환경변수 설정 하기 (MAC os)

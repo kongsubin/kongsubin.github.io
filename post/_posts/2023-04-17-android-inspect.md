@@ -1,11 +1,12 @@
 ---
 layout: post
 title: android inspect하는 방법
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [android]
 description: >
   android inspect 하는 방법
+published: true
 ---
 # android inspect하기!
 

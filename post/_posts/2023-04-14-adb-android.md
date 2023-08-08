@@ -1,11 +1,12 @@
 ---
 layout: post
 title: adb를 이용한 안드로이드 apk 설치 
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [android]
 description: >
   컴퓨터에 있는 apk 파일을 usb를 이용해서 단말기에 바로 설치하기!
+published: true
 ---
 
 # adb를 이용한 안드로이드 apk 설치

@@ -3,9 +3,10 @@ layout: post
 title: 자바 버젼 충돌 에러
 description: >
   자바 class 파일 버전 충돌 
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [error]
+published: true
 ---
 
 # 자바 버젼 충돌 에러 

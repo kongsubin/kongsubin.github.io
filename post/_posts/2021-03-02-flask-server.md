@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Python Server 구동시키기 + npm 모니터링
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [flask]
+published: true
 ---
 # Python Server 구동시키기 + npm 모니터링
 

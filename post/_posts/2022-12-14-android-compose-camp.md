@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Android Compose Camp 참여 후기 
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [android]
 description: >
   Android Compose Camp 참여
+published: true
 ---
 
 # Android Compose Camp 참여

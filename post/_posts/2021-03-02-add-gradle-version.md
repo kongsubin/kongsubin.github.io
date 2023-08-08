@@ -3,9 +3,10 @@ layout: post
 title: gradle version 추가 (MAC os)
 description: >
   mac os에 gradle version 추가 하기. 
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [gradle]
+published: true
 ---
 ## gradle version 추가 (MAC os)
 

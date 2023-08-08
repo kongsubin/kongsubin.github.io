@@ -1,9 +1,10 @@
 ---
 layout: post
 title: JAVA 한글 파일명 깨짐
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [java]
+published: true
 ---
 
 # JAVA 한글 파일명 깨짐

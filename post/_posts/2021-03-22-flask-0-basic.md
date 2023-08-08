@@ -1,9 +1,10 @@
 ---
 layout: post
 title: 플라스크의 장점
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [flask]
+published: true
 ---
 
 # 왜 플라스크를 사용하는가??

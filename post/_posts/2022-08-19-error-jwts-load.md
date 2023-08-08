@@ -2,9 +2,10 @@
 layout: post
 title: jwts 라이브러리 사용시, Class could not be found Error
 description: Unable to load class named [io.jsonwebtoken.impl.DefaultJwtBuilder] from the thread context, current, or system/application ClassLoaders. All heuristics have been exhausted. Class could not be found. Have you remembered to include the jjwt-impl.jar in your runtime classpath?
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [error, java]
+published: true
 ---
 # jwts 라이브러리 사용시, Class could not be found Error
 

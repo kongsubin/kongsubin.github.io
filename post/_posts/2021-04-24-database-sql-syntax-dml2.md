@@ -1,11 +1,12 @@
 ---
 layout: post
 title: DML의 문법 - Set, String, Order operations
-sitemap: false
+sitemap: true
 # description: > 
 # NULL values, Set operations, String operations, ordering
 categories: [study]
 tags: [database]
+published: true
 ---
 
 # SQL 문법 

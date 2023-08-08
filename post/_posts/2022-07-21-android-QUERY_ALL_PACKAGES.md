@@ -1,9 +1,10 @@
 ---
 layout: post
 title: 안드로이드 버전 10 이상 파일 저장 방식 변화 
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [android]
+published: true
 ---
 
 # QUERY_ALL_PACKAGES 사용시, 권한 선언 필요 

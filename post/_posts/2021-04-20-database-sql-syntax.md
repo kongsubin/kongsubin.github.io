@@ -1,9 +1,10 @@
 ---
 layout: post
 title: SQL의 종류
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [database]
+published: true
 ---
 
 # SQL 언어란?

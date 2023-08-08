@@ -1,9 +1,10 @@
 ---
 layout: post
 title: 플라스크 개발환경 
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [flask]
+published: true
 ---
 # Conda를 사용하여 플라스크 개발환경 구축
 <br>

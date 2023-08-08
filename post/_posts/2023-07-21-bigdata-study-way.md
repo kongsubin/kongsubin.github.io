@@ -1,12 +1,14 @@
 ---
 layout: post
 title: 빅데이터분석기사 실기 공부 방법 
-sitemap: false
+sitemap: true
 categories: [study]
 tags: [info]
 description: >
   빅데이터분석기사 비전공자 실기 공부 방법~!
+published: true
 ---
+
 
 # 빅데이터분석기사 실기 공부법
 
