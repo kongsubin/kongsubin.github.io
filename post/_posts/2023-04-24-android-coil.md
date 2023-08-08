@@ -17,6 +17,7 @@ android image loader 라이브러리이다.
 
 ## 1. imageView의 확장함수 load를 사용하는 방법. 
 > 간단하게 이미지 불러오기가 가능하며, 람다 함수를 이용해 옵션값을 지정할 수 있음. 
+
 ~~~kotlin
 import coil.load
 
@@ -25,6 +26,7 @@ imageView.load("https://kongsubin.github.io/assets/img/logo.png") {
     transformations(CircleCropTransformation())
 }
 ~~~
+
 - placeholder : 이미지를 불러오는 동안 표시할 이미지 지정
 - error : 로딩을 실패했을 때 대체할 이미지를 지정
 - transformations : 이미지를 변형 
@@ -58,6 +60,7 @@ val request = ImageRequest.Builder(context)
     .build()
 
 imageLoader.enqueue(request)
+
 ~~~
 
 
@@ -68,7 +71,8 @@ imageLoader.enqueue(request)
 
 ### 1. settings.gradle 설정
 > PhotoView를 받아 올 수 있는 저장소 추가 
-~~~xml
+
+~~~kotlin
 ...
 
 dependencyResolutionManagement {
