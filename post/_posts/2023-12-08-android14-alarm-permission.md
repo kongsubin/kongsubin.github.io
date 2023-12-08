@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Android v14로 업데이트시 알림 권한 이슈 
+title: Android v14로 업데이트시 알림 권한 이슈 [SCHEDULE_EXACT_ALARM]
 sitemap: true
 categories: [study]
 tags: [android]
 description: >
   안드로이드 버전 14가 출시되면서 생겨난 문제점과 그 이유!
-  
+
   java.lang.SecurityException: Caller com.kong.sub needs to hold android.permission.SCHEDULE_EXACT_ALARM or android.permission.USE_EXACT_ALARM to set exact alarms.
 published: true
 ---
 
-# Android v13 업데이트시, Permission 변경점
+# Android v14로 업데이트시 알림 권한 이슈 [SCHEDULE_EXACT_ALARM]
 
 ## 상황
 안드로이드 14버전이 나오면서 해당 버전에서 앱을 실행하면 앱이 스플래시 화면에서 넘어가지 않는 현상이 발견!!
