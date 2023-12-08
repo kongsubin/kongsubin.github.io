@@ -6,6 +6,7 @@ categories: [study]
 tags: [android]
 description: >
   안드로이드 버전 14가 출시되면서 생겨난 문제점과 그 이유!
+  
   java.lang.SecurityException: Caller com.kong.sub needs to hold android.permission.SCHEDULE_EXACT_ALARM or android.permission.USE_EXACT_ALARM to set exact alarms.
 published: true
 ---
@@ -46,7 +47,6 @@ setAlarmClock()
 ## 적용하기.
 
 1. canScheduleExactAlarms()로 권한을 확인
-
 ~~~kotlin
 val alarmManager: AlarmManager = context.getSystemService<AlarmManager>()!!
 when {
@@ -62,7 +62,6 @@ when {
 ~~~
 
 2. 권한 확인 후 리시버에서 처리
-
 ~~~kotlin
 override fun onResume() {
    …  
